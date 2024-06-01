@@ -22,14 +22,14 @@
          for i in range(1, 6):
             print(i)
 
-# Create a thread
-thread = threading.Thread(target=print_numbers)
+     # Create a thread
+      thread = threading.Thread(target=print_numbers)
 
-# Start the thread
-thread.start()
+      # Start the thread
+     thread.start()
 
-# Wait for the thread to complete
-thread.join()
+     # Wait for the thread to complete
+     thread.join()
 
  - Synchronizing Threads
         When multiple threads access shared resources, synchronization is necessary to avoid data corruption. The threading module provides 
@@ -46,22 +46,22 @@ thread.join()
            for i in range(1, 6):
              print(i)
 
-# Create multiple threads
-threads = [threading.Thread(target=print_numbers) for _ in range(3)]
+    # Create multiple threads
+     threads = [threading.Thread(target=print_numbers) for _ in range(3)]
 
-# Start the threads
-for thread in threads:
-    thread.start()
+    # Start the threads
+    for thread in threads:
+       thread.start()
 
-# Wait for all threads to complete
-for thread in threads:
-    thread.join()
+     # Wait for all threads to complete
+    for thread in threads:
+      thread.join()
 
- - Thread Communication
-     Threads can communicate using shared variables, but this requires careful synchronization. Another approach is to use thread-safe data 
-      structures like Queue from the queue module.
+   - Thread Communication
+       Threads can communicate using shared variables, but this requires careful synchronization. Another approach is to use thread-safe data 
+        structures like Queue from the queue module.
 
- ** Example using Queue
+    ** Example using Queue
 
     import threading
     import queue
@@ -74,20 +74,20 @@ for thread in threads:
 
     q = queue.Queue()
 
-# Add items to the queue
-for item in range(1, 11):
+  # Add items to the queue
+  for item in range(1, 11):
     q.put(item)
 
-# Create and start worker threads
-threads = [threading.Thread(target=worker, args=(q,)) for _ in range(3)]
+   # Create and start worker threads
+   threads = [threading.Thread(target=worker, args=(q,)) for _ in range(3)]
 
-for thread in threads:
-    thread.start()
+   for thread in threads:
+     thread.start()
 
-# Wait for all tasks to be processed
-q.join()
-Example: Multithreading in Python
-Let's create a more comprehensive example to demonstrate multithreading in a real-world scenario.
+  # Wait for all tasks to be processed
+   q.join()
+  Example: Multithreading in Python
+    Let's create a more comprehensive example to demonstrate multithreading in a real-world scenario.
 
  - Example: Downloading Multiple URLs
 
