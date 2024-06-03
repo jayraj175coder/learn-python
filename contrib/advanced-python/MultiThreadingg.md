@@ -31,7 +31,7 @@
      # Wait for the thread to complete
      thread.join()
 
- - Synchronizing Threads
+   - Synchronizing Threads
         When multiple threads access shared resources, synchronization is necessary to avoid data corruption. The threading module provides 
       synchronization primitives like Lock, RLock, Semaphore, and Condition.
 
@@ -112,12 +112,12 @@
   for thread in threads:
     thread.join()
 
-      >> Common Pitfalls
+     >> Common Pitfalls
         1.Global Interpreter Lock (GIL): Python's GIL can limit the performance benefits of threading for CPU-bound tasks. Consider using 
          multiprocessing for such tasks.
         2.Race conditions: Ensure proper synchronization to avoid race conditions when accessing shared resources.
          Deadlocks: Be cautious of deadlocks when using multiple locks.
 
-     >> Conclusion
-          Multithreading in Python is a powerful tool for concurrent execution, especially for I/O-bound tasks. By understanding and correctly 
-          implementing threading, you can significantly improve the performance and responsiveness of your applications.
+  >> Conclusion
+       Multithreading in Python is a powerful tool for concurrent execution, especially for I/O-bound tasks. By understanding and correctly 
+      implementing threading, you can significantly improve the performance and responsiveness of your applications.
