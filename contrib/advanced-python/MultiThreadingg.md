@@ -1,12 +1,12 @@
                                                   # MultiThreading in python
->> Introduction
-           Multithreading in Python allows you to run multiple threads (smaller units of a process) simultaneously, enabling concurrent execution of 
-      tasks. This can be particularly useful for I/O-bound operations or when you need to perform multiple operations at the same time.
+    >> Introduction
+           Multithreading in Python allows you to run multiple threads (smaller units of a process) simultaneously, enabling concurrent execution 
+           of tasks. This can be particularly useful for I/O-bound operations or when you need to perform multiple operations at the same time.
 
->> Why Use Multithreading?
-   1.Improved performance: Allows multiple tasks to run concurrently, which can lead to more efficient utilization of resources.
-   2.Responsive applications: Keeps your applications responsive, especially during long-running operations.
-   3.Better resource utilization: Makes better use of system resources, especially in I/O-bound applications.
+    >> Why Use Multithreading?
+         1.Improved performance: Allows multiple tasks to run concurrently, which can lead to more efficient utilization of resources.
+         2.Responsive applications: Keeps your applications responsive, especially during long-running operations.
+         3.Better resource utilization: Makes better use of system resources, especially in I/O-bound applications.
 
   - Threading Module
      Python's threading module provides a way to create and manage threads. It includes the Thread class, which represents an individual thread of 
